@@ -26,6 +26,13 @@ public class PlayerMove : MonoBehaviour
     {
         Move();
         Jump();
+    }
+
+    private void Move()
+    {
+        moveX = Input.GetAxis("Horizontal");
+        rb.velocity = new Vector2(moveX * speed, rb.velocity.y);
+
         if (moveX < 0)
         {
             player.flipX = true;
@@ -34,14 +41,6 @@ public class PlayerMove : MonoBehaviour
         {
             player.flipX = false;
         }
-    }
-
-    private void Move()
-    {
-        moveX = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(moveX * speed, rb.velocity.y);
-
-        animator.SetFloat("Speed", rb.velocity.magnitude);
     }
 
     private void Jump()

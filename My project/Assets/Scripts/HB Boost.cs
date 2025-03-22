@@ -19,6 +19,6 @@ public class HBBoost : MonoBehaviour
     {
 
         PlayerHP._currHP += HowManyAddHP;
-        PlayerHP.healthText.text = $"HP: {PlayerHP._currHP}";
+        PlayerHP.healthText.text = "HP: "+PlayerHP._currHP;
     }
 }

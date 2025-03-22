@@ -35,7 +35,7 @@ public class PlayerHP : MonoBehaviour
         if (_currHP > 0)
         {
             _currHP -= damage;
-            healthText.text = $"HP: {_currHP}";
+            healthText.text = "HP: "+_currHP;
         }
         if (_currHP <= 0)
         {
@@ -45,6 +45,6 @@ public class PlayerHP : MonoBehaviour
     
     private void DrawHP()
     {
-        healthText.text = $"HP: {_currHP}";
+        healthText.text = "HP: " + _currHP;
     }
 }

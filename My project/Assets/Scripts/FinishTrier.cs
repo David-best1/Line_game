@@ -36,9 +36,4 @@ public class Finish_Trier : MonoBehaviour
         gameMenu.SetActive(false);
         finishMenu.SetActive(true);
     }
-
-    /*private void moveOff()
-    {
-
-    }*/
 }
